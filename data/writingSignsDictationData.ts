@@ -1,0 +1,45 @@
+
+export interface WritingDictationQuestion {
+    answer: string;
+    sound: string;
+}
+
+export const writingSignsDictationData: WritingDictationQuestion[] = [
+    { answer: 'آ', sound: 'آ' },
+    { answer: 'اَ', sound: 'اَ' },
+    { answer: 'اِ', sound: 'اِ' },
+    { answer: 'اُ', sound: 'اُ' },
+    { answer: 'او', sound: 'او' },
+    { answer: 'ای', sound: 'ای' },
+    { answer: 'ب', sound: 'ب' },
+    { answer: 'پ', sound: 'پ' },
+    { answer: 'ت', sound: 'ت' },
+    { answer: 'ث', sound: 'ث' },
+    { answer: 'ج', sound: 'ج' },
+    { answer: 'چ', sound: 'چ' },
+    { answer: 'ح', sound: 'ح' },
+    { answer: 'خ', sound: 'خ' },
+    { answer: 'د', sound: 'د' },
+    { answer: 'ذ', sound: 'ذ' },
+    { answer: 'ر', sound: 'ر' },
+    { answer: 'ز', sound: 'ز' },
+    { answer: 'ژ', sound: 'ژ' },
+    { answer: 'س', sound: 'س' },
+    { answer: 'ش', sound: 'ش' },
+    { answer: 'ص', sound: 'ص' },
+    { answer: 'ض', sound: 'ض' },
+    { answer: 'ط', sound: 'ط' },
+    { answer: 'ظ', sound: 'ظ' },
+    { answer: 'ع', sound: 'ع' },
+    { answer: 'غ', sound: 'غ' },
+    { answer: 'ف', sound: 'ف' },
+    { answer: 'ق', sound: 'ق' },
+    { answer: 'ک', sound: 'ک' },
+    { answer: 'گ', sound: 'گ' },
+    { answer: 'ل', sound: 'ل' },
+    { answer: 'م', sound: 'م' },
+    { answer: 'ن', sound: 'ن' },
+    { answer: 'و', sound: 'و' },
+    { answer: 'ه', sound: 'ه' },
+    { answer: 'ی', sound: 'ی' },
+];

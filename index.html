@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neshanak - نشانک</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <style>
+      .perspective-1000 {
+        perspective: 1000px;
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Vazirmatn', 'sans-serif'],
+            },
+            colors: {
+                'brand-background': '#FFF1D5', // Cream Yellow
+                'brand-primary': '#9FB3DF', // Muted Blue
+                'brand-primary-light': '#9EC6F3', // Sky Blue
+                'brand-secondary': '#9EC6F3', // Sky Blue
+                'brand-accent': '#BDDDE4', // Powder Blue
+                'brand-text': '#1E293B', // Slate 800
+            },
+            keyframes: {
+                'jump-in': {
+                    '0%': { opacity: '0', transform: 'scale(0.5)' },
+                    '100%': { opacity: '1', transform: 'scale(1)' },
+                },
+                'shake': {
+                    '0%, 100%': { transform: 'translateX(0)' },
+                    '10%, 30%, 50%, 70%, 90%': { transform: 'translateX(-5px)' },
+                    '20%, 40%, 60%, 80%': { transform: 'translateX(5px)' },
+                },
+                'tada': {
+                    'from': { transform: 'scale3d(1, 1, 1)' },
+                    '10%, 20%': { transform: 'scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg)' },
+                    '30%, 50%, 70%, 90%': { transform: 'scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg)' },
+                    '40%, 60%, 80%': { transform: 'scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg)' },
+                    'to': { transform: 'scale3d(1, 1, 1)' }
+                },
+                'bounce-in': {
+                    '0%': { opacity: '0', transform: 'scale(0.3)' },
+                    '50%': { opacity: '1', transform: 'scale(1.05)' },
+                    '70%': { transform: 'scale(0.9)' },
+                    '100%': { transform: 'scale(1)' }
+                },
+                'spin-and-grow': {
+                    '0%': { opacity: '0', transform: 'scale(0.1) rotate(0deg)' },
+                    '100%': { opacity: '1', transform: 'scale(1) rotate(360deg)' }
+                },
+                'slide-in-fwd-center': {
+                    '0%': { transform: 'translateZ(-1400px)', opacity: '0' },
+                    '100%': { transform: 'translateZ(0)', opacity: '1' }
+                },
+                'shake-short': {
+                  '0%, 100%': { transform: 'translateX(0)' },
+                  '25%, 75%': { transform: 'translateX(-4px)' },
+                  '50%': { transform: 'translateX(4px)' },
+                },
+                'collect-cotton': {
+                  '0%': { transform: 'translate(var(--tw-translate-x), var(--tw-translate-y)) scale(1)', opacity: 1 },
+                  '100%': { transform: 'translate(var(--target-x), var(--target-y)) scale(0.2)', opacity: 0 }
+                },
+                'chick-emerge': {
+                  '0%': { transform: 'scale(0.5) translateY(10px)', opacity: '0' },
+                  '100%': { transform: 'scale(1) translateY(0)', opacity: '1' }
+                },
+                'pulse-glow': {
+                  '0%, 100%': { filter: 'drop-shadow(0 0 3px #FBBF24)' },
+                  '50%': { filter: 'drop-shadow(0 0 12px #FBBF24)' }
+                },
+                'move-snail': {
+                  'to': { transform: 'translateX(800%)' }
+                }
+            },
+            animation: {
+                'jump-in': 'jump-in 0.3s ease-out forwards',
+                'shake': 'shake 0.5s ease-in-out',
+                'tada': 'tada 1s ease-in-out',
+                'bounce-in': 'bounce-in 0.6s ease-out forwards',
+                'spin-and-grow': 'spin-and-grow 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both',
+                'slide-in-fwd-center': 'slide-in-fwd-center 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both',
+                'shake-short': 'shake-short 0.3s ease-in-out',
+                'collect-cotton': 'collect-cotton 1s ease-in-out forwards',
+                'chick-emerge': 'chick-emerge 0.5s ease-out forwards',
+                'pulse-glow': 'pulse-glow 1.5s ease-in-out infinite',
+                'move-snail': 'move-snail 2s ease-in-out forwards'
+            }
+          }
+        }
+      }
+    </script>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.10.0",
+    "vite": "https://esm.sh/vite@^7.0.5",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^4.7.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-brand-background dark:bg-slate-900 font-sans transition-colors duration-300">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
